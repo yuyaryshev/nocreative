@@ -1,19 +1,21 @@
+// NoCreativeMod.java
 package com.lomods.nocreativemod;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-@Mod(Constants.MOD_ID)
+@Mod(NoCreativeMod.MOD_ID)
 public class NoCreativeMod {
-    
+
+    public static final String MOD_ID = "nocreativemod";
+    public static final Logger LOGGER = LogManager.getLogger();
+
     public NoCreativeMod() {
-    
-        // This method is invoked by the Forge mod loader when it is ready
-        // to load your mod. You can access Forge and Common code in this
-        // project.
-    
-        // Use Forge to bootstrap the Common mod.
-        Constants.LOG.info("Hello Forge world!");
-        CommonClass.init();
-        
+        LOGGER.info("nocreativemod started!");
+
+        // Register the event handler
+        MinecraftForge.EVENT_BUS.register(new PlayerEventHandler());
     }
 }
