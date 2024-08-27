@@ -1,8 +1,8 @@
-package com.example.examplemod;
+package com.lomods.nocreativemod;
 
 import net.fabricmc.api.ModInitializer;
 
-public class ExampleMod implements ModInitializer {
+public class NoCreativeMod implements ModInitializer {
     
     @Override
     public void onInitialize() {

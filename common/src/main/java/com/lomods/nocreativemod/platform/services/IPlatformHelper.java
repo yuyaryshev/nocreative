@@ -1,4 +1,4 @@
-package com.example.examplemod.platform.services;
+package com.lomods.nocreativemod.platform.services;
 
 public interface IPlatformHelper {
 

@@ -1,6 +1,6 @@
 {
     "schemaVersion": 1,
-    "id": "mod_id",
+    "id": "nocreativemod",
     "version": "${version}",
     "name": "${mod_name}",
     "description": "${description}",
@@ -8,15 +8,15 @@
         "${mod_author}"
     ],
     "contact": {
-        "homepage": "https://fabricmc.net/",
-        "sources": "https://github.com/FabricMC/fabric-example-mod"
+        "homepage": "${mod_home_url}",
+        "sources": "${mod_home_url}"
     },
     "license": "${license}",
     "icon": "assets/modid/${mod_id}.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.example.examplemod.ExampleMod"
+            "com.lomods.nocreativemod.NoCreativeMod"
         ]
     },
     "mixins": [

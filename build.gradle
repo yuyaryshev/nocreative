@@ -70,6 +70,7 @@ subprojects {
                 "mod_name": mod_name,
                 "mod_author": mod_author,
                 "mod_id": mod_id,
+                "mod_home_url": mod_id,
                 "license": license,
                 "description": project.description
         ]
